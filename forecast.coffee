@@ -26,4 +26,4 @@ class Dashing.Forecast extends Dashing.Widget
     @forecast_icons.set(name, Skycons[skycon]) if skycon
    
   toSkycon: (icon) ->
-    icon.replace(/-/g, "_").toUpperCase() if icon
+    @get(icon).replace(/-/g, "_").toUpperCase() if @get(icon)
