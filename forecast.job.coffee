@@ -32,7 +32,7 @@ fetchWeather = ->
           current_temp: Math.round body.currently.temperature
           current_icon: body.currently.icon
           current_desc: body.currently.summary
-          next_desc: body.minutely?.summary
+          next_desc: body.minutely?.summary or "No data"
           next_icon: body.minutely?.icon
           later_desc: body.hourly?.summary
           later_icon: body.hourly?.icon
